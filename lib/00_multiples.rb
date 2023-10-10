@@ -15,7 +15,7 @@ def sum_of_3_or_5_multiples(final_number)
     end
     # Ici, lance une boucle qui va de zéro au chiffre "final_number" EXCLU (car on est sur du strictement inférieur)
     # cette boucle indente à chaque tour une variable (par exemple "current_number") qui vaudra 0 puis 1 puis 2 ... etc.
-    (0..final_number-1).each do |current_number|
+    (0...final_number-1).each do |current_number|
   
       if is_multiple_of_3_or_5?(current_number)
         # si la réponse est "true", alors je rajoute la valeur de "current_number" à la variable "final_sum".
